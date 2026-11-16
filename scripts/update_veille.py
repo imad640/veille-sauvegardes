@@ -11,22 +11,25 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parent.parent / "veille.json"
 MAX_ITEMS, MAX_AGE_DAYS, SUMMARY_LEN = 150, 180, 220
 
-# filtre=True : on ne garde que les articles contenant un mot-clé de THEMES
-# filtre=False : on garde tout (sources déjà ciblées)
+# Toutes les sources sont filtrées : on ne garde que les articles sur les sauvegardes.
 SOURCES = [
-    {"name": "CERT-FR · Alertes",   "type": "Source officielle", "url": "https://www.cert.ssi.gouv.fr/alerte/feed/",    "filtre": False, "categorie": "Alertes CERT-FR"},
-    {"name": "CERT-FR · Actualités","type": "Source officielle", "url": "https://www.cert.ssi.gouv.fr/actualite/feed/", "filtre": False, "categorie": "Alertes CERT-FR"},
-    {"name": "ZATAZ",               "type": "Presse spécialisée","url": "https://www.zataz.com/feed/",                  "filtre": True},
-    {"name": "Silicon.fr",          "type": "Presse spécialisée","url": "https://www.silicon.fr/feed",                  "filtre": True},
-    {"name": "LeMagIT",             "type": "Presse spécialisée","url": "https://www.lemagit.fr/rss/ContentSyndication.xml", "filtre": True},
-    {"name": "The Hacker News",     "type": "Presse internationale","url": "https://feeds.feedburner.com/TheHackersNews","filtre": True},
+    {"name": "CERT-FR",             "type": "Source officielle",    "url": "https://www.cert.ssi.gouv.fr/actualite/feed/"},
+    {"name": "ZATAZ",               "type": "Presse spécialisée",   "url": "https://www.zataz.com/feed/"},
+    {"name": "Silicon.fr",          "type": "Presse spécialisée",   "url": "https://www.silicon.fr/feed"},
+    {"name": "LeMagIT",             "type": "Presse spécialisée",   "url": "https://www.lemagit.fr/rss/ContentSyndication.xml"},
+    {"name": "The Hacker News",     "type": "Presse internationale","url": "https://feeds.feedburner.com/TheHackersNews"},
+    {"name": "BleepingComputer",    "type": "Presse internationale","url": "https://www.bleepingcomputer.com/feed/"},
+    {"name": "Backblaze Blog",      "type": "Éditeur",              "url": "https://www.backblaze.com/blog/feed/"},
 ]
 
-THEMES = {  # ordre = priorité
-    "Sauvegardes":    ["sauvegarde", "backup", "restauration", "immuable", "immutable", "veeam", "acronis", "commvault", "synology", "3-2-1", "disaster recovery", "plan de reprise", "pra "],
-    "Ransomwares":    ["ransomware", "rançongiciel", "rancongiciel", "raas", "lockbit", "qilin", "akira", "ransomhub", "double extorsion", "extorsion", "play ransomware"],
-    "Réglementation": ["nis2", "nis 2", "rgpd", "loi résilience", "loi resilience", "cnil", "anssi", "conformité", "directive"],
-}
+# Mots-clés propres aux sauvegardes
+BACKUP_WORDS = ["sauvegarde", "backup", "restauration des données", "restauration de données", "immuable", "immutable",
+                "veeam", "acronis", "commvault", "veritas", "synology", "proxmox backup", "3-2-1", "disaster recovery",
+                "plan de reprise", "reprise d'activité", "pca", "pra", "rpo", "rto", "snapshot", "nas", "stockage objet",
+                "object lock", "worm", "déduplication", "deduplication"]
+# Sujets qu'on ne veut pas voir comme sujet principal
+OTHER_WORDS = ["ransomware", "rançongiciel", "rancongiciel", "raas", "lockbit", "qilin", "akira", "ransomhub",
+               "extorsion", "nis2", "nis 2", "rgpd", "loi résilience", "loi resilience", "directive", "conformité"]
 
 def clean(txt):
     txt = re.sub(r"<[^>]+>", " ", txt or "")
@@ -80,12 +83,18 @@ def parse_feed(xml_bytes):
             items.append({"title": title, "link": link, "summary": summary, "date": when})
     return items
 
-def classify(text):
-    low = " " + text.lower() + " "
-    for theme, words in THEMES.items():
-        if any(w in low for w in words):
-            return theme
-    return None
+def has(text, words):
+    low = " " + re.sub(r"[^\w\-' ]", " ", text.lower()) + " "
+    return {w for w in words if (" " + w + " ") in low or (len(w) > 4 and w in low)}
+
+def is_backup(title, summary):
+    """Vrai si l'article parle surtout de sauvegardes."""
+    in_title = has(title, BACKUP_WORDS)
+    if has(title, OTHER_WORDS) and not in_title:
+        return False
+    if in_title:
+        return True
+    return len(has(summary, BACKUP_WORDS)) >= 2 and not has(title, OTHER_WORDS)
 
 def short(s):
     return s if len(s) <= SUMMARY_LEN else s[:SUMMARY_LEN].rsplit(" ", 1)[0] + "…"
@@ -111,10 +120,9 @@ def main():
             when = e["date"] or now
             if when < limit:
                 continue
-            theme = classify(e["title"] + " " + e["summary"])
-            if s["filtre"] and not theme:
+            if not is_backup(e["title"], e["summary"]):
                 continue
-            category = theme or s.get("categorie", "Autres")
+            category = "Sauvegardes"
             found[e["link"]] = {"title": e["title"], "link": e["link"], "summary": short(e["summary"]),
                                 "date": when.isoformat(), "source": s["name"], "category": category}
             kept += 1
