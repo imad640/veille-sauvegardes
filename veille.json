@@ -1,12 +1,8 @@
 {
- "updated": "2026-11-15T16:05:56.868123+00:00",
+ "updated": "2026-11-16T13:19:20.355439+00:00",
  "sources": [
   {
-   "name": "CERT-FR · Alertes",
-   "type": "Source officielle"
-  },
-  {
-   "name": "CERT-FR · Actualités",
+   "name": "CERT-FR",
    "type": "Source officielle"
   },
   {
@@ -24,9 +20,25 @@
   {
    "name": "The Hacker News",
    "type": "Presse internationale"
+  },
+  {
+   "name": "BleepingComputer",
+   "type": "Presse internationale"
+  },
+  {
+   "name": "Backblaze Blog",
+   "type": "Éditeur"
   }
  ],
  "items": [
+  {
+   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+   "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+   "summary": "",
+   "date": "2026-11-16T18:03:18+05:30",
+   "source": "The Hacker News",
+   "category": "Sauvegardes"
+  },
   {
    "title": "Sauvegarde Windows : l’option réseau local abandonnée au profit de OneDrive",
    "link": "https://www.silicon.fr/workspace-1376/sauvegarde-windows-onedrive-230341",
@@ -44,14 +56,6 @@
    "category": "Sauvegardes"
   },
   {
-   "title": "NIS 2 : la situation se débloque… sur un statu quo",
-   "link": "https://www.silicon.fr/cybersecurite-1371/projet-loi-resilience-nis-2-230228",
-   "summary": "",
-   "date": "2026-11-12T12:00:48+00:00",
-   "source": "Silicon.fr",
-   "category": "Réglementation"
-  },
-  {
    "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
    "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
    "summary": "",
@@ -60,308 +64,20 @@
    "category": "Sauvegardes"
   },
   {
-   "title": "NIS 2 est enfin arrivé à l’Assemblée nationale",
-   "link": "https://www.lemagit.fr/actualites/366654660/NIS-2-est-enfin-arrive-a-lAssemblee",
+   "title": "The Mac Backup Problem Most IT Teams Don’t See Coming",
+   "link": "https://www.backblaze.com/blog/the-mac-backup-problem-most-it-teams-dont-see-coming/",
    "summary": "",
-   "date": "2026-11-10T13:04:00+00:00",
-   "source": "LeMagIT",
-   "category": "Réglementation"
+   "date": "2026-10-27T15:53:07+00:00",
+   "source": "Backblaze Blog",
+   "category": "Sauvegardes"
   },
   {
-   "title": "Cybersécurité : la CNIL sanctionne dix collectivités",
-   "link": "https://www.zataz.com/cybersecurite-la-cnil-sanctionne-dix-collectivites/",
+   "title": "Why Your Computer Backup Strategy Determines Whether You Pay the Ransom",
+   "link": "https://www.backblaze.com/blog/why-your-computer-backup-strategy-determines-whether-you-pay-the-ransom/",
    "summary": "",
-   "date": "2026-11-09T21:50:33+00:00",
-   "source": "ZATAZ",
-   "category": "Réglementation"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-047 (09 novembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-047/",
-   "summary": "",
-   "date": "2026-11-09T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "NIS 2, le projet de loi de retour le 9 novembre",
-   "link": "https://www.silicon.fr/cybersecurite-1371/nis-2-le-projet-de-loi-de-retour-le-9-novembre-230126",
-   "summary": "",
-   "date": "2026-11-05T13:01:30+00:00",
-   "source": "Silicon.fr",
-   "category": "Réglementation"
-  },
-  {
-   "title": "[MàJ] Vulnérabilité dans OpenSSH (05 novembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015/",
-   "summary": "",
-   "date": "2026-11-05T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-046 (02 novembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-046/",
-   "summary": "",
-   "date": "2026-11-02T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-045 (26 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-045/",
-   "summary": "",
-   "date": "2026-10-26T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "[Màj] Multiples vulnérabilités dans PHP (21 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/",
-   "summary": "",
-   "date": "2026-10-21T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-044 (19 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-044/",
-   "summary": "",
-   "date": "2026-10-19T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure (ICS) (14 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-013/",
-   "summary": "",
-   "date": "2026-10-14T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Incident de sécurité ciblant les contrôleurs à distance des installations de réfrigération (12 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
-   "summary": "",
-   "date": "2026-10-12T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-043 (12 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-043/",
-   "summary": "",
-   "date": "2026-10-12T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-042 (05 octobre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-042/",
-   "summary": "",
-   "date": "2026-10-05T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Multiples vulnérabilités dans Citrix NetScaler ADC et Gateway (28 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-011/",
-   "summary": "",
-   "date": "2026-09-28T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-041 (28 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-041/",
-   "summary": "",
-   "date": "2026-09-28T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-040 (21 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-040/",
-   "summary": "",
-   "date": "2026-09-21T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-039 (14 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-039/",
-   "summary": "",
-   "date": "2026-09-14T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Vulnérabilité dans Metabase (10 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-010/",
-   "summary": "",
-   "date": "2026-09-10T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-038 (07 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-038/",
-   "summary": "",
-   "date": "2026-09-07T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Multiples vulnérabilités dans SonicWall Secure Mobile Access (02 septembre 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-009/",
-   "summary": "",
-   "date": "2026-09-02T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-037 (31 août 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-037/",
-   "summary": "",
-   "date": "2026-08-31T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-036 (24 août 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-036/",
-   "summary": "",
-   "date": "2026-08-24T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-035 (17 août 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-035/",
-   "summary": "",
-   "date": "2026-08-17T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-034 (10 août 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-034/",
-   "summary": "",
-   "date": "2026-08-10T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-033 (03 août 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-033/",
-   "summary": "",
-   "date": "2026-08-03T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-032 (27 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-032/",
-   "summary": "",
-   "date": "2026-07-27T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Multiples vulnérabilités dans Microsoft Sharepoint (22 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-008/",
-   "summary": "",
-   "date": "2026-07-22T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Multiples vulnérabilités dans WordPress (20 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-007/",
-   "summary": "",
-   "date": "2026-07-20T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-031 (20 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-031/",
-   "summary": "",
-   "date": "2026-07-20T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Multiples vulnérabilités dans Sonicwall Secure Mobile Access (15 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-006/",
-   "summary": "",
-   "date": "2026-07-15T00:00:00+00:00",
-   "source": "CERT-FR · Alertes",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-030 (13 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-030/",
-   "summary": "",
-   "date": "2026-07-13T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-029 (06 juillet 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-029/",
-   "summary": "",
-   "date": "2026-07-06T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-028 (29 juin 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-028/",
-   "summary": "",
-   "date": "2026-06-29T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-027 (22 juin 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-027/",
-   "summary": "",
-   "date": "2026-06-22T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-026 (15 juin 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-026/",
-   "summary": "",
-   "date": "2026-06-15T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-025 (08 juin 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-025/",
-   "summary": "",
-   "date": "2026-06-08T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-024 (01 juin 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-024/",
-   "summary": "",
-   "date": "2026-06-01T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
-  },
-  {
-   "title": "Bulletin d'actualité CERTFR-2026-ACT-023 (26 mai 2026)",
-   "link": "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-023/",
-   "summary": "",
-   "date": "2026-05-26T00:00:00+00:00",
-   "source": "CERT-FR · Actualités",
-   "category": "Alertes CERT-FR"
+   "date": "2026-10-07T16:07:49+00:00",
+   "source": "Backblaze Blog",
+   "category": "Sauvegardes"
   }
  ]
 }
