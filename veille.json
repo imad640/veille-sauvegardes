@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T14:04:26.333760+00:00",
+ "updated": "2026-11-18T13:38:22.232028+00:00",
  "sources": [
   {
    "name": "CERT-FR",
@@ -61,14 +61,6 @@
    "summary": "",
    "date": "2026-11-13T11:04:00+00:00",
    "source": "LeMagIT",
-   "category": "Sauvegardes"
-  },
-  {
-   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-   "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-   "summary": "",
-   "date": "2026-11-11T19:31:00+05:30",
-   "source": "The Hacker News",
    "category": "Sauvegardes"
   },
   {
