@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T13:47:47.292552+00:00",
+ "updated": "2026-11-21T13:13:16.589237+00:00",
  "sources": [
   {
    "name": "CERT-FR",
@@ -31,22 +31,6 @@
   }
  ],
  "items": [
-  {
-   "title": "Sauvegarde : Commvault étend ses fonctions de souveraineté pour mieux vendre en Europe",
-   "link": "https://www.lemagit.fr/actualites/366654670/Sauvegarde-Commvault-etend-ses-fonctions-de-souverainete-pour-mieux-vendre-en-Europe",
-   "summary": "",
-   "date": "2026-11-17T01:30:00+00:00",
-   "source": "LeMagIT",
-   "category": "Sauvegardes"
-  },
-  {
-   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
-   "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
-   "summary": "",
-   "date": "2026-11-16T18:03:18+05:30",
-   "source": "The Hacker News",
-   "category": "Sauvegardes"
-  },
   {
    "title": "Sauvegarde Windows : l’option réseau local abandonnée au profit de OneDrive",
    "link": "https://www.silicon.fr/workspace-1376/sauvegarde-windows-onedrive-230341",
